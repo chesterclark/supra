@@ -1,0 +1,64 @@
+.sidebar .nav-item {
+  border-bottom: 1px solid #626262;
+  /*position: relative;*/
+}
+
+/* html[data-bs-theme="dark"] .form-control {
+  background-color: #282930 !important;
+}
+
+html[data-bs-theme="dark"] .form-control input {
+  background-color: #282930 !important;
+}
+
+html[data-bs-theme="dark"] .form-control select {
+  background-color: #282930 !important;
+} */
+
+html[data-bs-theme="dark"] input {
+  background: #282930;
+}
+
+html[data-bs-theme="dark"] select {
+  background-color: #282930 !important;
+}
+
+html[data-bs-theme="dark"] .btn-dark {
+  background: #1cc88a;
+  color: #000000;
+}
+
+html[data-bs-theme="dark"] #wrapper #content-wrapper {
+  background: #282930;
+}
+
+html[data-bs-theme="dark"] .bg-white {
+  background: #282930 !important;
+}
+
+html[data-bs-theme="dark"] .text-dark {
+  color: #ffffff !important;
+}
+
+html[data-bs-theme="dark"] .card-header {
+  background: #3a3b45 !important;
+}
+
+html[data-bs-theme="dark"] .card {
+  background: #3a3b45 !important;
+  border-color: #626262 !important;
+}
+
+html[data-bs-theme="dark"] .card-header {
+  background: #3a3b45 !important;
+  border-color: #626262 !important;
+}
+
+
+/* 3a3b45 */
+
+
+/* $('span').css('color', '#ffffff');
+    $('input').css('background', '#282930');
+    $('select').css('background', '#282930'); */
+

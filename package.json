@@ -1,0 +1,26 @@
+{
+  "name": "mother-engine",
+  "version": "1.0.0",
+  "description": "MOTHER",
+  "main": "./app.js",
+  "private": true,
+  "engines": {
+    "node": "16.13.0",
+    "npm": "8.1.0"
+  },
+  "scripts": {
+    "test": "npm install, node ./app.js",
+    "start": "node ./app.js"
+  },
+  "author": "Mac Neil Ivan Tumacay",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^1.6.8",
+    "body-parser": "^1.14.1",
+    "cors": "^2.8.5",
+    "devtools-detect": "^4.0.1",
+    "express": "^4.18.1",
+    "express-jwt": "^3.3.0",
+    "googleapis": "^114.0.0"
+  }
+}
