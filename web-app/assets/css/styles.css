@@ -1,5 +1,13 @@
+.sidebar li .submenu { 
+	list-style: none; 
+	margin: 0; 
+	padding: 0; 
+	padding-left: 1rem; 
+	padding-right: 1rem;
+}
+
 .sidebar .nav-item {
-  border-bottom: 1px solid #626262;
+  border-bottom: 1px solid #282930;
   /*position: relative;*/
 }
 
