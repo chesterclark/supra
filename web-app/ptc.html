@@ -17,20 +17,151 @@
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h4 class="modal-title">Update Rental</h4><button class="btn-close" type="button" aria-label="Close" data-bs-dismiss="modal"></button>
+                    <h4 class="modal-title">Create New PTC</h4><button class="btn-close" type="button" aria-label="Close" data-bs-dismiss="modal"></button>
                 </div>
                 <div class="modal-body">
-                    <div></div>
                     <div>
                         <div class="row">
                             <div class="col">
-                                <h6 style="font-weight: bold;">Rental Status</h6><select id="rental_status" class="form-control">
-                                    <optgroup label="Select Rental Status">
-                                        <option value="">Served</option>
-                                        <option value="">Returned</option>
-                                    </optgroup>
-                                </select>
+                                <h6 style="font-weight: bold;">Control Number</h6><input type="text" id="control_number" class="form-control">
                             </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="row">
+                            <div class="col">
+                                <h6 style="font-weight: bold;">Serial Number</h6><input type="text" id="serial_number" class="form-control">
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="row">
+                            <div class="col">
+                                <h6 style="font-weight: bold;">Kind</h6><input type="text" id="kind" class="form-control">
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="row">
+                            <div class="col">
+                                <h6 style="font-weight: bold;">Make</h6><input type="text" id="make" class="form-control">
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="row">
+                            <div class="col">
+                                <h6 style="font-weight: bold;">Caliber</h6><input type="text" id="caliber" class="form-control">
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="row">
+                            <div class="col">
+                                <h6 style="font-weight: bold;">Amo</h6><input type="text" id="amo" class="form-control">
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="row">
+                            <div class="col">
+                                <h6 style="font-weight: bold;">Date Issued</h6><input id="date_issued" class="form-control" type="date">
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="row">
+                            <div class="col">
+                                <h6 style="font-weight: bold;">Date Expired</h6><input id="date_expired" class="form-control" type="date">
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <h6 id="last_date_created">-</h6>
+                        </div>
+                        <div class="col-lg-6">
+                            <h6 id="last_date_updated">-</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-light" type="button" data-bs-dismiss="modal">Close</button><button class="btn btn-dark" id="save" type="button">Save</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" role="dialog" tabindex="-1" id="update">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Update PTC</h4><button class="btn-close" type="button" aria-label="Close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <div>
+                        <div class="row">
+                            <div class="col">
+                                <h6 style="font-weight: bold;">Control Number</h6><input type="text" id="control_number" class="form-control">
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="row">
+                            <div class="col">
+                                <h6 style="font-weight: bold;">Serial Number</h6><input type="text" id="serial_number" class="form-control">
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="row">
+                            <div class="col">
+                                <h6 style="font-weight: bold;">Kind</h6><input type="text" id="kind" class="form-control">
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="row">
+                            <div class="col">
+                                <h6 style="font-weight: bold;">Make</h6><input type="text" id="make" class="form-control">
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="row">
+                            <div class="col">
+                                <h6 style="font-weight: bold;">Caliber</h6><input type="text" id="caliber" class="form-control">
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="row">
+                            <div class="col">
+                                <h6 style="font-weight: bold;">Amo</h6><input type="text" id="amo" class="form-control">
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="row">
+                            <div class="col">
+                                <h6 style="font-weight: bold;">Date Issued</h6><input id="date_issued" class="form-control" type="date">
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="row">
+                            <div class="col">
+                                <h6 style="font-weight: bold;">Date Expired</h6><input id="date_expired" class="form-control" type="date">
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <h6 id="last_date_created">-</h6>
+                        </div>
+                        <div class="col-lg-6">
+                            <h6 id="last_date_updated">-</h6>
                         </div>
                     </div>
                 </div>
@@ -107,10 +238,13 @@
         <div class="d-flex flex-column" id="content-wrapper">
             <div id="content">
                 <div class="container-fluid">
-                    <h3 class="text-dark mb-4">Rentals</h3>
+                    <h3 class="text-dark mb-4">PTC</h3>
+                    <ul class="list-inline text-end">
+                        <li class="list-inline-item"><button class="btn btn-dark btn-sm" id="create" type="button">Create New PTC</button></li>
+                    </ul>
                     <div class="card shadow">
                         <div class="card-header py-3">
-                            <p class="text-dark m-0 fw-bold">List of Rentals</p>
+                            <p class="text-dark m-0 fw-bold">PTC</p>
                         </div>
                         <div class="card-body">
                             <!-- <div class="row">
@@ -130,24 +264,37 @@
                                 <table class="table table-striped table-bordered">
                                     <thead>
                                         <tr>
-                                            <!-- <th>Date Created</th> -->
-                                            <!-- <th>Date Updated</th> -->
+                                            <!-- <th>Date Created</th>
+                                            <th>Date Updated</th>
+                                            <th>LTOP Category</th>
                                             <th>First Name</th>
                                             <th>Last Name</th>
-                                            <th>Address</th>
+                                            <th>Street Address</th>
                                             <th>Mobile Number</th>
-                                            <th>Armory Category</th>
-                                            <th>Armory Name</th>
-                                            <th>Armory Caliber</th>
-                                            <th>Armory Manufacturer</th>
-                                            <th>Armory Model</th>
-                                            <th>Armory Serial Number</th>
-                                            <th>Armory Rental Status</th>
+                                            <th>Telephone Number</th>
+                                            <th>Email Address</th>
+                                            <th>Status</th>
+                                            <th>Date Issued</th>
+                                            <th>Date Expired</th>
+                                            <th>Notes</th>
+                                            <th>Requirements Submitted</th>
+                                            <th>Action</th> -->
+
+                                            <!-- <th>Date Created</th> -->
+                                            <!-- <th>Date Updated</th> -->
+                                            <th>Control Number</th>
+                                            <th>Serial Number</th>
+                                            <th>Kind</th>
+                                            <th>Make</th>
+                                            <th>Caliber</th>
+                                            <th>Amo</th>
+                                            <th>Date Issued</th>
+                                            <th>Date Expired</th>
                                             <th>Action</th>
                                         </tr>
                                     </thead>
                                     <tbody>
-                                        <tr>
+                                        <!-- <tr>
                                             <td>None</td>
                                             <td>None</td>
                                             <td>None</td>
@@ -167,7 +314,7 @@
                                                     <li class="list-inline-item"><button class="btn btn-dark btn-sm" id="delete" type="button">Delete</button></li>
                                                 </ul>
                                             </td>
-                                        </tr>
+                                        </tr> -->
                                     </tbody>
                                 </table>
                             </div>
@@ -216,7 +363,7 @@
     <script type="application/javascript" src="assets/js/jsrsasign-all-min.js"></script>
     <script type="application/javascript" src="assets/js/controllers/app.js"></script>
     <script type="application/javascript" src="https://cdn.datatables.net/1.13.7/js/jquery.dataTables.min.js"></script>
-    <script type="application/javascript">new App.rentals()</script>
+    <script type="application/javascript">new App.ptc()</script>
 </body>
 
 </html>

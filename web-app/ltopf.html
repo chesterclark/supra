@@ -127,8 +127,19 @@
                             </div>
                         </div>
                     </div>
+                    <hr>
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <h6 id="last_date_created">-</h6>
+                        </div>
+                        <div class="col-lg-6">
+                            <h6 id="last_date_updated">-</h6>
+                        </div>
+                    </div>
                 </div>
-                <div class="modal-footer"><button class="btn btn-light" type="button" data-bs-dismiss="modal">Close</button><button class="btn btn-dark" id="save" type="button">Save</button></div>
+                <div class="modal-footer">
+                    <button class="btn btn-light" type="button" data-bs-dismiss="modal">Close</button><button class="btn btn-dark" id="save" type="button">Save</button>
+                </div>
             </div>
         </div>
     </div>
@@ -246,6 +257,15 @@
                             </div>
                         </div>
                     </div>
+                    <hr>
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <h6 id="last_date_created">-</h6>
+                        </div>
+                        <div class="col-lg-6">
+                            <h6 id="last_date_updated">-</h6>
+                        </div>
+                    </div>
                 </div>
                 <div class="modal-footer"><button class="btn btn-light" type="button" data-bs-dismiss="modal">Close</button><button class="btn btn-dark" id="save" type="button">Save</button></div>
             </div>
@@ -259,17 +279,52 @@
                     </div>
                 </a>
                 <hr class="sidebar-divider my-0">
-                <ul class="navbar-nav text-light" id="accordionSidebar" style="margin-top: 50px;">
-                    <li class="nav-item"><a class="nav-link" href="dashboard.html"><span>Dashboard</span></a></li>
-                    <li class="nav-item"><a class="nav-link" href="members.html"><span>Members</span></a></li>
-                    <li class="nav-item"><a class="nav-link" href="customers.html"><span>Customers</span></a></li>
-                    <!-- <li class="nav-item"><a class="nav-link" href="rentals.html"><span>Rentals</span></a></li> -->
-                    <li class="nav-item"><a class="nav-link active" href="ltopf.html"><span>LTOPF Application</span></a></li>
-                    <li class="nav-item"><a class="nav-link" href="armory.html"><span>Armory</span></a></li>
-                    <li class="nav-item"><a class="nav-link" href="ammo.html"><span>Ammo</span></a></li>
-                    <li class="nav-item"><a class="nav-link" href="users.html"><span>Users</span></a></li>
-                    <li class="nav-item"><a class="nav-link" href="system-logs.html"><span>System Logs</span></a></li>
-                    <li class="nav-item"><a class="nav-link" href="#" id="logout"><span>Logout</span></a></li>
+                <ul class="nav" style="margin-top: 50px;">
+                    <li class="nav-item">
+                        <a class="nav-link" href="dashboard.html">Dashboard</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="customers.html">Customer</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Sales Order</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="members.html">Member</a>
+                    </li>
+                    <li class="nav-item has-submenu">
+                        <a class="nav-link" href="#">License & Permits</a>
+                        <ul class="submenu collapse">
+                            <li><a class="nav-link" href="ltopf.html">LTOPF</a></li>
+                            <li><a class="nav-link" href="firearms.html">Firearms</a></li>
+                            <li><a class="nav-link" href="ptc.html">PTC</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item has-submenu">
+                        <a class="nav-link" href="#">Reports</a>
+                        <ul class="submenu collapse">
+                            <li><a class="nav-link" href="sales-report.html">Sales Report</a></li>
+                            <li><a class="nav-link" href="member-roster-report.html">Member Roster</a></li>
+                            <li><a class="nav-link" href="inventory-report.html">Inventory</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item has-submenu">
+                        <a class="nav-link" href="#">Armory & Ammunition</a>
+                        <ul class="submenu collapse">
+                            <li><a class="nav-link" href="armory.html">Armory</a></li>
+                            <li><a class="nav-link" href="ammo.html">Ammunition</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item has-submenu">
+                        <a class="nav-link" href="#">User & System Logs</a>
+                        <ul class="submenu collapse">
+                            <li><a class="nav-link" href="users.html">User</a></li>
+                            <li><a class="nav-link" href="system-logs.html">System Logs</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" id="logout">Logout</a>
+                    </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">
                             <div class="form-check form-switch">
@@ -327,8 +382,8 @@
                                             <th>Requirements Submitted</th>
                                             <th>Action</th> -->
 
-                                            <th>Date Created</th>
-                                            <th>Date Updated</th>
+                                            <!-- <th>Date Created</th> -->
+                                            <!-- <th>Date Updated</th> -->
                                             <th>Date Applied</th>
                                             <th>Full Name</th>
                                             <th>Street Address</th>
