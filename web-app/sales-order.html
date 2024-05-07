@@ -14,91 +14,78 @@
 
 <body id="page-top">
     <div class="modal fade" role="dialog" tabindex="-1" id="create">
-        <div class="modal-dialog modal-xl" role="document">
+        <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h4 class="modal-title">Create New Customer</h4><button class="btn-close" type="button" aria-label="Close" data-bs-dismiss="modal"></button>
+                    <h4 class="modal-title">Create New Sales Order</h4><button class="btn-close" type="button" aria-label="Close" data-bs-dismiss="modal"></button>
                 </div>
                 <div class="modal-body">
+                    <!-- <div>
+                        <div class="row">
+                            <div class="col">
+                                <h6 style="font-weight: bold;">Sales Order Number</h6><input type="text" id="sales_order_number" class="form-control">
+                            </div>
+                        </div>
+                    </div> -->
                     <div>
                         <div class="row">
                             <div class="col">
-                                <h6 style="font-weight: bold;">First&nbsp; Name</h6><input type="text" id="firstname" class="form-control">
-                            </div>
-                            <div class="col">
-                                <h6 style="font-weight: bold;">Middle Name</h6><input type="text" id="middlename" class="form-control">
-                            </div>
-                            <div class="col">
-                                <h6 style="font-weight: bold;">Last Name</h6><input type="text" id="lastname" class="form-control">
+                                <h6 style="font-weight: bold;">Transaction Date</h6><input type="date" id="transaction_date" class="form-control">
                             </div>
                         </div>
                     </div>
                     <div>
                         <div class="row">
                             <div class="col">
-                                <h6 style="font-weight: bold;">Street Address</h6><input type="text" id="street_address" class="form-control">
-                            </div>
-                        </div>
-                    </div>
-                    <div>
-                        <div class="row">
-                            <div class="col">
-                                <h6 style="font-weight: bold;">Business/Office Address</h6><input type="text" id="business_address" class="form-control">
-                            </div>
-                        </div>
-                    </div>
-                    <div>
-                        <div class="row">
-                            <div class="col-lg-4">
-                                <h6 style="font-weight: bold;">Mobile Number</h6><input type="text" id="mobile_number" class="form-control">
-                            </div>
-                            <div class="col-lg-4">
-                                <h6 style="font-weight: bold;">Telephone Number</h6><input type="text" id="telephone_number" class="form-control">
-                            </div>
-                            <div class="col-lg-4">
-                                <h6 style="font-weight: bold;">Email Address</h6><input type="text" id="email_address" class="form-control">
-                            </div>
-                        </div>
-                    </div>
-                    <!-- <hr>
-                    <h4>Ammo Purchase Transaction</h4>
-                    <div>
-                        <div class="row">
-                            <div class="col-lg-6">
-                                <h6 style="font-weight: bold;">Ammo</h6>
-                                <select id="ammo_id" class="form-control">
-                                </select>
-                            </div>
-                            <div class="col-lg-6">
-                                <h6 style="font-weight: bold;">Ammo Quantity</h6><input type="number" id="ammo_quantity" class="form-control">
-                            </div>
-                        </div>
-                    </div>
-                    <hr>
-                    <h4>Armory Rental Transaction</h4>
-                    <div>
-                        <div class="row">
-                            <div class="col-lg-12">
-                                <h6 style="font-weight: bold;">Armory</h6>
-                                <select id="armory_id" class="form-control">
-                                   
-                                </select>
-                            </div>
-                    
-                        </div>
-                        <div class="row">
-                            <div class="col-lg-12">
-                                <h6 style="font-weight: bold;">Armory Rental Status</h6>
-                                <select id="armory_rental_status" class="form-control">
-                                    <optgroup label="Select Rental Status">
-                                        <option selected="true">None</option>
-                                        <option value="">Served</option>
-                                        <option value="">Returned</option>
+                                <h6 style="font-weight: bold;">Customer</h6><select id="customer_id" class="form-control">
+                                    <optgroup label="Select Customer">
+                                        <!-- <option>Approved</option> -->
+                                        <!-- <option>Declined</option> -->
                                     </optgroup>
                                 </select>
                             </div>
                         </div>
-                    </div> -->
+                    </div>
+                    <div>
+                        <div class="row">
+                            <div class="col">
+                                <h6 style="font-weight: bold;">Membership Type</h6><select id="membership_type" class="form-control">
+                                    <optgroup label="Select Membership Type">
+                                        <option selected="true">Member</option>
+                                        <!-- <option>Approved</option> -->
+                                        <!-- <option>Declined</option> -->
+                                    </optgroup>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="row">
+                            <div class="col">
+                                <h6 style="font-weight: bold;">Firearms Used</h6><select id="firearms_used" class="form-control">
+                                    <optgroup label="Select Firearms Used">
+                                        <option selected="true">Personal</option>
+                                        <!-- <option>Approved</option> -->
+                                        <!-- <option>Declined</option> -->
+                                    </optgroup>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="row">
+                            <div class="col">
+                                <h6 style="font-weight: bold;">Order Status</h6><select id="order_status" class="form-control">
+                                    <optgroup label="Select Order Status">
+                                        <option selected="true">Active</option>
+                                        <option>Paid</option>
+                                        <!-- <option>Approved</option> -->
+                                        <!-- <option>Declined</option> -->
+                                    </optgroup>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
                     <hr>
                     <div class="row">
                         <div class="col-lg-6">
@@ -114,167 +101,85 @@
         </div>
     </div>
     <div class="modal fade" role="dialog" tabindex="-1" id="update">
-        <div class="modal-dialog modal-xl" role="document">
+        <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h4 class="modal-title">Update Customer</h4><button class="btn-close" type="button" aria-label="Close" data-bs-dismiss="modal"></button>
+                    <h4 class="modal-title">Update Sales Order</h4><button class="btn-close" type="button" aria-label="Close" data-bs-dismiss="modal"></button>
                 </div>
                 <div class="modal-body">
+                    <!-- <div>
+                        <div class="row">
+                            <div class="col">
+                                <h6 style="font-weight: bold;">Sales Order Number</h6><input type="text" id="sales_order_number" class="form-control">
+                            </div>
+                        </div>
+                    </div> -->
                     <div>
                         <div class="row">
                             <div class="col">
-                                <h6 style="font-weight: bold;">First&nbsp; Name</h6><input type="text" id="firstname" class="form-control">
-                            </div>
-                            <div class="col">
-                                <h6 style="font-weight: bold;">Middle Name</h6><input type="text" id="middlename" class="form-control">
-                            </div>
-                            <div class="col">
-                                <h6 style="font-weight: bold;">Last Name</h6><input type="text" id="lastname" class="form-control">
+                                <h6 style="font-weight: bold;">Transaction Date</h6><input type="date" id="transaction_date" class="form-control">
                             </div>
                         </div>
                     </div>
                     <div>
                         <div class="row">
                             <div class="col">
-                                <h6 style="font-weight: bold;">Street Address</h6><input type="text" id="street_address" class="form-control">
+                                <h6 style="font-weight: bold;">Customer</h6><select id="customer_id" class="form-control">
+                                    <optgroup label="Select Customer">
+                                        <!-- <option>Approved</option> -->
+                                        <!-- <option>Declined</option> -->
+                                    </optgroup>
+                                </select>
                             </div>
                         </div>
                     </div>
                     <div>
                         <div class="row">
                             <div class="col">
-                                <h6 style="font-weight: bold;">Business/Office Address</h6><input type="text" id="business_address" class="form-control">
+                                <h6 style="font-weight: bold;">Membership Type</h6><select id="membership_type" class="form-control">
+                                    <optgroup label="Select Membership Type">
+                                        <option selected="true">Member</option>
+                                        <!-- <option>Approved</option> -->
+                                        <!-- <option>Declined</option> -->
+                                    </optgroup>
+                                </select>
                             </div>
                         </div>
                     </div>
                     <div>
                         <div class="row">
-                            <div class="col-lg-4">
-                                <h6 style="font-weight: bold;">Mobile Number</h6><input type="text" id="mobile_number" class="form-control">
+                            <div class="col">
+                                <h6 style="font-weight: bold;">Firearms Used</h6><select id="firearms_used" class="form-control">
+                                    <optgroup label="Select Firearms Used">
+                                        <option selected="true">Personal</option>
+                                        <!-- <option>Approved</option> -->
+                                        <!-- <option>Declined</option> -->
+                                    </optgroup>
+                                </select>
                             </div>
-                            <div class="col-lg-4">
-                                <h6 style="font-weight: bold;">Telephone Number</h6><input type="text" id="telephone_number" class="form-control">
-                            </div>
-                            <div class="col-lg-4">
-                                <h6 style="font-weight: bold;">Email Address</h6><input type="text" id="email_address" class="form-control">
+                        </div>
+                    </div>
+                    <div>
+                        <div class="row">
+                            <div class="col">
+                                <h6 style="font-weight: bold;">Order Status</h6><select id="order_status" class="form-control">
+                                    <optgroup label="Select Order Status">
+                                        <option selected="true">Active</option>
+                                        <option>Paid</option>
+                                        <!-- <option>Approved</option> -->
+                                        <!-- <option>Declined</option> -->
+                                    </optgroup>
+                                </select>
                             </div>
                         </div>
                     </div>
                     <hr>
-                    <h4>Ammo Purchase Transaction</h4>
-                    <div>
-                        <div class="row">
-                            <div class="col-lg-6">
-                                <h6 style="font-weight: bold;">Ammo</h6>
-                                <select id="ammo_id" class="form-control">
-                                    <!-- <optgroup label="Select Item Type">
-                                        <option selected="true">Assault Rifle</option>
-                                        <option>Derringer</option>
-                                        <option>Machine Gun</option>
-                                        <option>Pistol</option>
-                                        <option>Rifle</option>
-                                        <option>Shotguns</option>
-                                        <option>Sniper Rifle</option>
-                                        <option>Submachine Gun</option>
-                                    </optgroup> -->
-                                </select>
-                            </div>
-                            <!-- <div class="col-lg-4">
-                                <h6 style="font-weight: bold;">Ammo Caliber</h6>
-                                <select id="ammo_caliber" class="form-control">
-                                    <optgroup label="Select Item Type">
-                                        <option selected="true">Assault Rifle</option>
-                                        <option>Derringer</option>
-                                        <option>Machine Gun</option>
-                                        <option>Pistol</option>
-                                        <option>Rifle</option>
-                                        <option>Shotguns</option>
-                                        <option>Sniper Rifle</option>
-                                        <option>Submachine Gun</option>
-                                    </optgroup>
-                                </select>
-                            </div> -->
-                            <div class="col-lg-6">
-                                <h6 style="font-weight: bold;">Ammo Quantity</h6><input type="number" id="ammo_quantity" class="form-control">
-                            </div>
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <h6 id="last_date_created">-</h6>
                         </div>
-                    </div>
-                    <hr>
-                    <h4>Armory Rental Transaction</h4>
-                    <div>
-                        <div class="row">
-                            <div class="col-lg-12">
-                                <h6 style="font-weight: bold;">Armory</h6>
-                                <select id="armory_id" class="form-control">
-                                    <!-- <optgroup label="Select Item Type">
-                                        <option selected="true">Assault Rifle</option>
-                                        <option>Derringer</option>
-                                        <option>Machine Gun</option>
-                                        <option>Pistol</option>
-                                        <option>Rifle</option>
-                                        <option>Shotguns</option>
-                                        <option>Sniper Rifle</option>
-                                        <option>Submachine Gun</option>
-                                    </optgroup> -->
-                                </select>
-                            </div>
-                            <!-- <div class="col-lg-4">
-                                <h6 style="font-weight: bold;">Armory Category</h6><input type="text" class="form-control">
-                            </div>
-                            <div class="col-lg-4">
-                                <h6 style="font-weight: bold;">Armory Name</h6><input type="text" class="form-control">
-                            </div>
-                            <div class="col-lg-4">
-                                <h6 style="font-weight: bold;">Armory Caliber</h6><input type="text" class="form-control">
-                            </div>
-                            <div class="col-lg-4">
-                                <h6 style="font-weight: bold;">Armory Manufacturer</h6><input type="text" class="form-control">
-                            </div>
-                            <div class="col-lg-4">
-                                <h6 style="font-weight: bold;">Armory Model</h6><input type="text" class="form-control">
-                            </div>
-                            <div class="col-lg-4">
-                                <h6 style="font-weight: bold;">Armory Serial Number</h6><input type="text" class="form-control">
-                            </div> -->
-                        </div>
-                        <div class="row">
-                            <div class="col-lg-12">
-                                <h6 style="font-weight: bold;">Armory Rental Status</h6>
-                                <select id="armory_rental_status" class="form-control">
-                                    <optgroup label="Select Rental Status">
-                                        <option selected="true">None</option>
-                                        <option>Served</option>
-                                        <option>Returned</option>
-                                    </optgroup>
-                                </select>
-                            </div>
-                            <!-- <div class="col-lg-4">
-                                <h6 style="font-weight: bold;">Armory Category</h6><input type="text" class="form-control">
-                            </div>
-                            <div class="col-lg-4">
-                                <h6 style="font-weight: bold;">Armory Name</h6><input type="text" class="form-control">
-                            </div>
-                            <div class="col-lg-4">
-                                <h6 style="font-weight: bold;">Armory Caliber</h6><input type="text" class="form-control">
-                            </div>
-                            <div class="col-lg-4">
-                                <h6 style="font-weight: bold;">Armory Manufacturer</h6><input type="text" class="form-control">
-                            </div>
-                            <div class="col-lg-4">
-                                <h6 style="font-weight: bold;">Armory Model</h6><input type="text" class="form-control">
-                            </div>
-                            <div class="col-lg-4">
-                                <h6 style="font-weight: bold;">Armory Serial Number</h6><input type="text" class="form-control">
-                            </div> -->
-                        </div>
-                        <hr>
-                        <div class="row">
-                            <div class="col-lg-6">
-                                <h6 id="last_date_created">-</h6>
-                            </div>
-                            <div class="col-lg-6">
-                                <h6 id="last_date_updated">-</h6>
-                            </div>
+                        <div class="col-lg-6">
+                            <h6 id="last_date_updated">-</h6>
                         </div>
                     </div>
                 </div>
@@ -290,7 +195,64 @@
                     </div>
                 </a>
                 <hr class="sidebar-divider my-0">
+
                 <ul class="nav" style="margin-top: 50px;">
+                    <li class="nav-item">
+                        <a class="nav-link" href="dashboard.html">Dashboard</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="customers.html">Customer</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="sales-order.html">Sales Order</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="members.html">Member</a>
+                    </li>
+                    <li class="nav-item has-submenu">
+                        <a class="nav-link" href="#">License & Permits</a>
+                        <ul class="submenu collapse">
+                            <li><a class="nav-link" href="ltopf.html">LTOPF</a></li>
+                            <li><a class="nav-link" href="firearms.html">Firearms</a></li>
+                            <li><a class="nav-link" href="ptc.html">PTC</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item has-submenu">
+                        <a class="nav-link" href="#">Reports</a>
+                        <ul class="submenu collapse">
+                            <li><a class="nav-link" href="sales-report.html">Sales Order</a></li>
+                            <li><a class="nav-link" href="member-roster-report.html">Member Roster</a></li>
+                            <li><a class="nav-link" href="inventory-report.html">Inventory</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item has-submenu">
+                        <a class="nav-link" href="#">Armory & Ammunition</a>
+                        <ul class="submenu collapse">
+                            <li><a class="nav-link" href="armory.html">Armory</a></li>
+                            <li><a class="nav-link" href="ammo.html">Ammunition</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item has-submenu">
+                        <a class="nav-link" href="#">User & System Logs</a>
+                        <ul class="submenu collapse">
+                            <li><a class="nav-link" href="users.html">User</a></li>
+                            <li><a class="nav-link" href="system-logs.html">System Logs</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" id="logout">Logout</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <div class="form-check form-switch">
+                                <input class="form-check-input" type="checkbox" role="switch" id="dark_mode">
+                                <label class="form-check-label" for="dark_mode">Dark Mode</label>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+
+                <!-- <ul class="nav" style="margin-top: 50px;">
                     <li class="nav-item">
                         <a class="nav-link" href="dashboard.html">Dashboard</a>
                     </li>
@@ -344,20 +306,94 @@
                             </div>
                         </a>
                     </li>
-                </ul>
+                </ul> -->
+
+                <!-- <ul class="navbar-nav text-light" id="accordionSidebar" style="margin-top: 50px;">
+                    <li class="nav-item"><a class="nav-link active" href="dashboard.html"><span>Dashboard</span></a></li>
+                    <li class="nav-item"><a class="nav-link" href="members.html"><span>Members</span></a></li>
+                    <li class="nav-item"><a class="nav-link" href="customers.html"><span>Customers</span></a></li>
+                    <li class="nav-item"><a class="nav-link" href="ltopf.html"><span>LTOPF Application</span></a></li>
+                    <li class="nav-item"><a class="nav-link" href="armory.html"><span>Armory</span></a></li>
+                    <li class="nav-item"><a class="nav-link" href="ammo.html"><span>Ammo</span></a></li>
+                    <li class="nav-item"><a class="nav-link" href="users.html"><span>Users</span></a></li>
+                    <li class="nav-item"><a class="nav-link" href="system-logs.html"><span>System Logs</span></a></li>
+                    <li class="nav-item"><a class="nav-link" href="#" id="logout"><span>Logout</span></a></li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <div class="form-check form-switch">
+                                <input class="form-check-input" type="checkbox" role="switch" id="dark_mode">
+                                <label class="form-check-label" for="dark_mode">Dark Mode</label>
+                            </div>
+                        </a>
+                    </li>
+                </ul> -->
                 <div class="text-center d-none d-md-inline"><button class="btn rounded-circle border-0" id="sidebarToggle" type="button"></button></div>
             </div>
         </nav>
         <div class="d-flex flex-column" id="content-wrapper">
             <div id="content">
                 <div class="container-fluid">
-                    <h3 class="text-dark mb-4">Customers</h3>
+                    <h3 class="text-dark mb-4">Sales Order <span id="full_name"></span></h3>
+                    <!-- <div class="row">
+                        <div class="col-md-6 col-xl-3 mb-4">
+                            <div class="card shadow border-start-primary py-2">
+                                <div class="card-body">
+                                    <div class="row align-items-center no-gutters">
+                                        <div class="col me-2">
+                                            <div class="text-uppercase text-primary fw-bold text-xs mb-1"><span style="color: var(--bs-form-valid-color);">no. of members</span></div>
+                                            <div class="text-dark fw-bold h5 mb-0"><span id="members_number">0</span></div>
+                                        </div>
+                                        <div class="col-auto"><i class="fas fa-certificate fa-2x text-gray-300"></i></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-xl-3 mb-4">
+                            <div class="card shadow border-start-primary py-2">
+                                <div class="card-body">
+                                    <div class="row align-items-center no-gutters">
+                                        <div class="col me-2">
+                                            <div class="text-uppercase text-primary fw-bold text-xs mb-1"><span style="color: var(--bs-form-valid-color);">no. of armories</span></div>
+                                            <div class="text-dark fw-bold h5 mb-0"><span id="armories_number">0</span></div>
+                                        </div>
+                                        <div class="col-auto"><i class="fas fa-certificate fa-2x text-gray-300"></i></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-xl-3 mb-4">
+                            <div class="card shadow border-start-primary py-2">
+                                <div class="card-body">
+                                    <div class="row align-items-center no-gutters">
+                                        <div class="col me-2">
+                                            <div class="text-uppercase text-primary fw-bold text-xs mb-1"><span style="color: var(--bs-form-valid-color);">no. of rentals</span></div>
+                                            <div class="text-dark fw-bold h5 mb-0"><span id="rentals_number">0</span></div>
+                                        </div>
+                                        <div class="col-auto"><i class="fas fa-certificate fa-2x text-gray-300"></i></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-xl-3 mb-4">
+                            <div class="card shadow border-start-primary py-2">
+                                <div class="card-body">
+                                    <div class="row align-items-center no-gutters">
+                                        <div class="col me-2">
+                                            <div class="text-uppercase text-primary fw-bold text-xs mb-1"><span style="color: var(--bs-form-valid-color);">no. of customers</span></div>
+                                            <div class="text-dark fw-bold h5 mb-0"><span id="customers_number">0</span></div>
+                                        </div>
+                                        <div class="col-auto"><i class="fas fa-certificate fa-2x text-gray-300"></i></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> -->
                     <ul class="list-inline text-end">
-                        <li class="list-inline-item"><button class="btn btn-dark btn-sm" id="create" type="button">Create New Customer</button></li>
+                        <li class="list-inline-item"><button class="btn btn-dark btn-sm" id="create" type="button">Create New Sales Order</button></li>
                     </ul>
                     <div class="card shadow">
                         <div class="card-header py-3">
-                            <p class="text-dark m-0 fw-bold">List of Customers</p>
+                            <p class="text-dark m-0 fw-bold">List of Sales Order</p>
                         </div>
                         <div class="card-body">
                             <!-- <div class="row">
@@ -400,12 +436,15 @@
 
                                             <!-- <th>Date Created</th> -->
                                             <!-- <th>Date Updated</th> -->
-                                            <th>Full Name</th>
+                                            <th>Sales Order ID</th>
+                                            <th>Transaction Date</th>
+                                            <th>Customer Name</th>
+                                            <th>Email</th>
                                             <th>Street Address</th>
-                                            <th>Mobile Number</th>
-                                            <th>Last Transaction</th>
+                                            <th>Membership Type</th>
+                                            <th>Firearms Used</th>
+                                            <th>Order Status</th>
                                             <th>Action</th>
-
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -457,6 +496,7 @@
                             </div> -->
                         </div>
                     </div>
+                    
                 </div>
             </div>
             <footer class="bg-white sticky-footer">
@@ -484,7 +524,7 @@
     <script type="application/javascript" src="assets/js/jsrsasign-all-min.js"></script>
     <script type="application/javascript" src="assets/js/controllers/app.js"></script>
     <script type="application/javascript" src="https://cdn.datatables.net/1.13.7/js/jquery.dataTables.min.js"></script>
-    <script type="application/javascript">new App.customers()</script>
+    <script type="application/javascript">new App.salesOrder()</script>
 </body>
 
 </html>
