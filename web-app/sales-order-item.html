@@ -13,6 +13,34 @@
 </head>
 
 <body id="page-top">
+    <div class="modal fade" role="dialog" tabindex="-1" id="create_payment">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Transact Payment</h4><button class="btn-close" type="button" aria-label="Close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <div>
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <h6 style="font-weight: bold;">Amount</h6><input type="number" id="amount" class="form-control" value="0">
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <h6 id="last_date_created">-</h6>
+                        </div>
+                        <div class="col-lg-6">
+                            <h6 id="last_date_updated">-</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer"><button class="btn btn-light" type="button" data-bs-dismiss="modal">Close</button><button class="btn btn-dark" id="save" type="button">Save</button></div>
+            </div>
+        </div>
+    </div>
     <div class="modal fade" role="dialog" tabindex="-1" id="create">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
@@ -43,8 +71,8 @@
                                    
                                 </select>
                             </div>
-                            <div class="col-lg-12">
-                                <h6 style="font-weight: bold;">Armory Quantity</h6><input type="number" id="armory_quantity" class="form-control" value="0">
+                            <div class="col-lg-12" style="display: none;">
+                                <h6 style="font-weight: bold;">Armory Quantity</h6><input type="number" id="armory_quantity" class="form-control" value="1">
                             </div>
                         </div>
                         <!-- <div class="row">
@@ -351,11 +379,16 @@
                                             <td>Total</td>
                                             <td><span id="total"></span></td>
                                         </tr>
+                                        <tr>
+                                            <td>Amount Paid</td>
+                                            <td><span id="amount_paid"></span></td>
+                                        </tr>
                                     </tbody>
                                 </table>
                             </div>
                             <ul class="list-inline">
-                                <li class="list-inline-item"><button id="mark_as_paid" class="btn btn-dark btn-sm" type="button">Mark as Paid</button></li>
+                                <li class="list-inline-item"><button id="payment" class="btn btn-dark btn-sm" type="button">Transact Payment</button></li>
+                                <!-- <li class="list-inline-item"><button id="mark_as_paid" class="btn btn-dark btn-sm" type="button">Mark as Paid</button></li> -->
                                 <!-- <li class="list-inline-item"><button id="create-2" class="btn btn-dark btn-sm" type="button">Save Transaction</button></li> -->
                             </ul>
                         </div>
